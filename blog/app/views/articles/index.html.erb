@@ -6,7 +6,8 @@
             <!--a href="<%= article_path(article)%>">
                 <%= article.title %>
             </a-->
-            <%= link_to article.title, article %>
+            <%= link_to article.title, article %> | 
+            <%= link_to "Edit", edit_article_path(article) %>
         </li>
     <% end %>
 </ul>
